@@ -4,8 +4,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    """
+    This function handles the home page route.
+    
+    :return: HTML string for the home page.
+    """
+    return '<h1>Hello, World!</h1>'
 
 @app.route('/about')
 def about():
-    return 'About'
+    """
+    This function handles the about page route.
+    
+    :return: HTML string for the about page.
+    """
+    return '<h1>About</h1>'
